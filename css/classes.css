@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Serif', sans-serif;
+}
+
+body {
+    background: #e5f3f3;
+}
+
+.dimension {
+    width: 550px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .row {
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.container .row .col h3 {
+    color: #607d8b;
+    font-weight: 500;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #7ae1d5;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.container .row .col h4 {
+    color: #607d8b;
+    font-weight: 500px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.container .row .col h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: relative;
+    color: #fff;
+    font-weight: 300px;
+    letter-spacing: 1px;
+    background-color: #7ae1d5;
+    padding: 10px;
+}
+
+.container .row .col p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container .row .col a {
+    display: inline-block;
+    padding: 10px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.container .row .col a {
+    background: #7ae1d5;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    max-width: 150px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+
+    .container .row .col h3 {
+        font-size: 1.5em;
+    }
+
+}
