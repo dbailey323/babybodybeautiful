@@ -19,8 +19,8 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    displayClassDates("s5jy", "2024-05-01", 9, "100000", [7]);
-    displayClassDates("sih1", "2024-05-01", 9, "183000", [7]);
+    displayClassDates("s5jy", "2024-05-01", 10, "100000", [7,8,9]);
+    displayClassDates("sih1", "2024-05-01", 10 "183000", [7,8,9]);
     displayClassDates("si9s", "2024-05-03", 9, "093000", [6,7]);
-    displayClassDates("sflf", "2024-05-03", 1, "100000");
+    displayClassDates("sflf", "2024-05-03", 5, "100000");
 });
