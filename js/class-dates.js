@@ -26,4 +26,5 @@ document.addEventListener('DOMContentLoaded', function () {
     displayClassDates("s6iu", "2024-09-11", 6, "183000");
     displayClassDates("sazv", "2024-09-11", 6, "093000");
     displayClassDates("so4d", "2024-09-13", 6, "093000");
+    displayClassDates("svtl", "2024-09-11", 1, "103000");
 });
