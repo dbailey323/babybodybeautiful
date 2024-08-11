@@ -1,21 +1,35 @@
 function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWeeks = []) {
     const classDatesContainer = document.getElementById(`classDates${className}`);
+    if (!classDatesContainer) return; // Exit if container does not exist
+
     const today = new Date();
-    today.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0); // Ensure time is set to midnight for comparison
+
+    const start = new Date(startDate);
+    if (isNaN(start)) {
+        console.error("Invalid startDate format. Use 'YYYY-MM-DD'.");
+        return;
+    }
+
+    let content = ''; // Use a single string to accumulate HTML content
 
     for (let i = 0; i < numWeeks; i++) {
-        if (skippedWeeks.includes(i + 1)) continue;
-        
-        const currentDate = new Date(startDate);
-        currentDate.setDate(currentDate.getDate() + (i * 7));
+        if (skippedWeeks.includes(i + 1)) continue; // Skip the week if it's in the skippedWeeks array
 
-        if (currentDate > today) {
+        const currentDate = new Date(start);
+        currentDate.setDate(start.getDate() + (i * 7)); // Calculate the date for the current week
+
+        if (currentDate > today) { // Only display future dates
             const formattedDate = currentDate.toLocaleDateString("en-GB", { month: "short", day: "numeric" });
             const linkDate = `${currentDate.getFullYear()}${(currentDate.getMonth() + 1).toString().padStart(2, '0')}${currentDate.getDate().toString().padStart(2, '0')}`;
             const link = `https://bookwhen.com/babybodybeautiful#focus=ev-${className}-${linkDate}${timeSuffix}`;
-            classDatesContainer.innerHTML += `<a href="${link}" target="_blank"><small>${formattedDate}</small></a><span style="margin-right: 10px;"></span>`;
+            
+            // Append content to the string
+            content += `<a href="${link}" target="_blank"><small>${formattedDate}</small></a><span style="margin-right: 10px;"></span>`;
         }
     }
+
+    classDatesContainer.innerHTML = content; // Update the DOM in one operation
 }
 
 document.addEventListener('DOMContentLoaded', function () {
