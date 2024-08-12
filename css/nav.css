@@ -1,33 +1,7 @@
-.container-fluid {
-  background-color: #e5f4f3;
+.navbar a {
+    font-size: 12px;
 }
 
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #e5f4f3;
-}
-
-.navbar-nav li {
-  margin-right: 1rem;
-  margin-bottom: 0.3rem;
-}
-
-.navbar-nav li:last-child {
-  margin-right: 0;
-}
-
-.navbar-nav a {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-  padding: 1rem 1rem;
-  border-radius: 0.3rem;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.navbar-nav a:hover {
-  background-color: #e5f4f3;
+.navbar .navbar-brand {
+    font-size: 18px;
 }
