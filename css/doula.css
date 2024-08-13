@@ -78,6 +78,8 @@ body {
     color: #607d8b;
     background: transparent;
     border-radius: 15px;
+    max-width: 100%; /* Ensure the link container doesn't overflow */
+    word-wrap: break-word; /* Allow the email to wrap onto a new line if necessary */
 }
 
 .container .row .col a {
@@ -85,8 +87,6 @@ body {
     color: #fff;
     outline: none;
     border: none;
-    cursor: pointer;
-    max-width: 500px;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
@@ -98,4 +98,24 @@ body {
         font-size: 1.5em;
     }
 
+    .container .row .col a {
+        font-size: 14px; /* Reduce the font size for smaller screens */
+        padding: 8px 8px; /* Adjust padding for smaller screens */
+    }
+
+    .dimension {
+        width: 100%; /* Make images responsive */
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container .row .col a {
+        font-size: 12px; /* Further reduce the font size for very small screens */
+        padding: 6px 6px; /* Adjust padding for very small screens */
+    }
+
+    .dimension {
+        width: 100%; /* Make images responsive */
+    }
 }
