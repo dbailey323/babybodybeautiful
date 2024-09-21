@@ -37,7 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
         { className: "s6iu", startDate: "2024-09-11", numWeeks: 6, timeSuffix: "183000" },
         { className: "sazv", startDate: "2024-09-11", numWeeks: 6, timeSuffix: "093000" },
         { className: "s20q", startDate: "2024-09-11", numWeeks: 6, timeSuffix: "093000" },
-        { className: "svtl", startDate: "2024-09-11", numWeeks: 1, timeSuffix: "103000" }
+        { className: "svtl", startDate: "2024-09-11", numWeeks: 1, timeSuffix: "103000" },
+        { className: "s0ih", startDate: "2024-10-30", numWeeks: 8, timeSuffix: "093000" },
+        { className: "sbo0", startDate: "2024-10-30", numWeeks: 8, timeSuffix: "103000" },
+        { className: "saxh", startDate: "2024-10-30", numWeeks: 8, timeSuffix: "183000" },
+        { className: "syh4", startDate: "2024-11-01", numWeeks: 1, timeSuffix: "094500" }
     ];
 
     classSchedules.forEach(schedule => {
