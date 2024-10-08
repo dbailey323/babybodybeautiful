@@ -11,6 +11,92 @@ body {
     background: #e5f3f3;
 }
 
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 0 0;
+    background: #e5f4f3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.banner .textBox {
+    position: relative;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.banner .textBox h2 {
+    color: #111;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner .textBox h2 span {
+    color: #111;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.banner .textBox p {
+    color: #111;
+    font-size: 1.2em;
+}
+
+.banner .textBox a {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: #111 solid;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 5%;
+}
+
+.banner .textBox a:hover {
+    background: #eb5a8a;
+}
+
+.banner .imgBox {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: 2;
+}
+
+.banner .imgBox img {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    z-index: 10000;
+}
+
+.banner-container {
+    position: relative;
+}
+
 .dimension {
     width: 550px;
     height: 100%;
