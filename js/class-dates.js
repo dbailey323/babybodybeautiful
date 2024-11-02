@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
         { className: "sqke", startDate: "2024-09-13", numWeeks: 6, timeSuffix: "094500" },
         { className: "sm5o", startDate: "2024-11-05", numWeeks: 7, timeSuffix: "141500" },
         { className: "sqa1", startDate: "2024-11-04", numWeeks: 1, timeSuffix: "114500" },
+        { className: "svvz", startDate: "2025-01-07", numWeeks: 1, timeSuffix: "114500" },
+        { className: "smyi", startDate: "2025-01-10", numWeeks: 1, timeSuffix: "114500" },
         { className: "sp6v", startDate: "2024-11-05", numWeeks: 1, timeSuffix: "131500" }
     ];
 
