@@ -34,20 +34,15 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
 
 document.addEventListener('DOMContentLoaded', function () {
     const classSchedules = [
-        { className: "s6iu", startDate: "2024-09-11", numWeeks: 6, timeSuffix: "183000" },
-        { className: "sazv", startDate: "2024-09-11", numWeeks: 6, timeSuffix: "093000" },
-        { className: "s20q", startDate: "2024-09-11", numWeeks: 6, timeSuffix: "093000" },
-        { className: "svtl", startDate: "2024-09-11", numWeeks: 1, timeSuffix: "103000" },
         { className: "s0ih", startDate: "2024-10-30", numWeeks: 8, timeSuffix: "093000" },
-        { className: "sbo0", startDate: "2024-10-30", numWeeks: 8, timeSuffix: "103000" },
         { className: "saxh", startDate: "2024-10-30", numWeeks: 8, timeSuffix: "183000" },
-        { className: "syh4", startDate: "2024-11-01", numWeeks: 1, timeSuffix: "094500" },
-        { className: "sqke", startDate: "2024-09-13", numWeeks: 6, timeSuffix: "094500" },
         { className: "sm5o", startDate: "2024-11-05", numWeeks: 7, timeSuffix: "141500" },
-        { className: "sqa1", startDate: "2024-11-04", numWeeks: 1, timeSuffix: "114500" },
         { className: "svvz", startDate: "2025-01-07", numWeeks: 1, timeSuffix: "114500" },
         { className: "smyi", startDate: "2025-01-10", numWeeks: 1, timeSuffix: "114500" },
-        { className: "sp6v", startDate: "2024-11-05", numWeeks: 1, timeSuffix: "131500" }
+        { className: "sp6v", startDate: "2024-11-05", numWeeks: 1, timeSuffix: "131500" },
+        { className: "sdbo", startDate: "2025-01-08", numWeeks: 6, timeSuffix: "093000" },
+        { className: "s8ow", startDate: "2025-01-08", numWeeks: 6, timeSuffix: "103000" },
+        { className: "sijm", startDate: "2025-01-08", numWeeks: 6, timeSuffix: "183000" }
     ];
 
     classSchedules.forEach(schedule => {
