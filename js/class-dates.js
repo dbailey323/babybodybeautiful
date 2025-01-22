@@ -2,14 +2,16 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
     const classDatesContainer = document.getElementById(`classDates${className}`);
     if (!classDatesContainer) return; // Exit if container does not exist
 
-    const today = new Date();
-    today.setHours(0, 0, 0, 0); // Ensure time is set to midnight for comparison
-
-    const start = new Date(startDate);
-    if (isNaN(start)) {
+    if (!startDate || isNaN(new Date(startDate))) {
         console.error("Invalid startDate format. Use 'YYYY-MM-DD'.");
         return;
     }
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Ensure today is set to midnight
+
+    const start = new Date(startDate);
+    start.setHours(0, 0, 0, 0); // Ensure the start date is set to midnight
 
     let content = ''; // Use a single string to accumulate HTML content
 
@@ -18,15 +20,16 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
 
         const currentDate = new Date(start);
         currentDate.setDate(start.getDate() + (i * 7)); // Calculate the date for the current week
+        currentDate.setHours(0, 0, 0, 0); // Ensure currentDate is set to midnight
 
         if (currentDate >= today) { // Include dates on the same day as today
-    const formattedDate = currentDate.toLocaleDateString("en-GB", { month: "short", day: "numeric" });
-    const linkDate = `${currentDate.getFullYear()}${(currentDate.getMonth() + 1).toString().padStart(2, '0')}${currentDate.getDate().toString().padStart(2, '0')}`;
-    const link = `https://bookwhen.com/babybodybeautiful#focus=ev-${className}-${linkDate}${timeSuffix}`;
-    
-    // Append content to the string
-    content += `<a href="${link}" target="_blank"><small>${formattedDate}</small></a><span style="margin-right: 10px;"></span>`;
-}
+            const formattedDate = currentDate.toLocaleDateString("en-GB", { month: "short", day: "numeric" });
+            const linkDate = `${currentDate.getFullYear()}${(currentDate.getMonth() + 1).toString().padStart(2, '0')}${currentDate.getDate().toString().padStart(2, '0')}`;
+            const link = `https://bookwhen.com/babybodybeautiful#focus=ev-${className}-${linkDate}${timeSuffix}`;
+            
+            // Append content to the string
+            content += `<a href="${link}" target="_blank"><small>${formattedDate}</small></a><span style="margin-right: 10px;"></span>`;
+        }
     }
 
     classDatesContainer.innerHTML = content; // Update the DOM in one operation
