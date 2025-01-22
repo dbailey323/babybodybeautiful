@@ -37,9 +37,9 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
 
 document.addEventListener('DOMContentLoaded', function () {
     const classSchedules = [
-        { className: "s85e", startDate: "2024-02-26", numWeeks: 8, timeSuffix: "183000" },
+        { className: "s85e", startDate: "2025-02-26", numWeeks: 8, timeSuffix: "183000" },
         { className: "sp36", startDate: "2025-02-26", numWeeks: 8, timeSuffix: "103000" },
-        { className: "skvj", startDate: "2024-02-26", numWeeks: 8, timeSuffix: "093000" },
+        { className: "skvj", startDate: "2025-02-26", numWeeks: 8, timeSuffix: "093000" },
         { className: "s5ok", startDate: "2025-02-25", numWeeks: 8, timeSuffix: "141500" },
         { className: "s0ih", startDate: "2024-10-30", numWeeks: 8, timeSuffix: "093000" },
         { className: "saxh", startDate: "2024-10-30", numWeeks: 8, timeSuffix: "183000" },
