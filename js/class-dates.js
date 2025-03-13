@@ -53,7 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
         { className: "s8ow", startDate: "2025-01-08", numWeeks: 6, timeSuffix: "103000" },
         { className: "sijm", startDate: "2025-01-08", numWeeks: 6, timeSuffix: "183000" },
         { className: "s785", startDate: "2025-02-14", numWeeks: 1, timeSuffix: "094500" },
-        { className: "soqe", startDate: "2025-04-04", numWeeks: 1, timeSuffix: "094500" }
+        { className: "soqe", startDate: "2025-04-04", numWeeks: 1, timeSuffix: "094500" },
+        { className: "s6ug", startDate: "2025-04-29", numWeeks: 1, timeSuffix: "094500" },
+        { className: "sc9f", startDate: "2025-05-02", numWeeks: 1, timeSuffix: "094500" },
+        { className: "stai", startDate: "2025-06-03", numWeeks: 1, timeSuffix: "094500" },
+        { className: "sahv", startDate: "2025-06-06", numWeeks: 1, timeSuffix: "094500" },
+        { className: "stiv", startDate: "2025-07-22", numWeeks: 1, timeSuffix: "094500" },
+        { className: "ssvf", startDate: "2025-07-25", numWeeks: 1, timeSuffix: "094500" }
+        
     ];
 
     classSchedules.forEach(schedule => {
