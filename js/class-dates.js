@@ -59,7 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
         { className: "stai", startDate: "2025-06-03", numWeeks: 1, timeSuffix: "131500" },
         { className: "sahv", startDate: "2025-06-06", numWeeks: 1, timeSuffix: "094500" },
         { className: "stiv", startDate: "2025-07-22", numWeeks: 1, timeSuffix: "131500" },
-        { className: "ssvf", startDate: "2025-07-25", numWeeks: 1, timeSuffix: "094500" }
+        { className: "ssvf", startDate: "2025-07-25", numWeeks: 1, timeSuffix: "094500" },
+        { className: "sqbs", startDate: "2025-04-29", numWeeks: 4, timeSuffix: "104500" },
+        { className: "shi8", startDate: "2025-04-30", numWeeks: 4, timeSuffix: "093000" },
+        { className: "swzy", startDate: "2025-04-30", numWeeks: 1, timeSuffix: "103000" },
+        { className: "swub", startDate: "2025-04-30", numWeeks: 1, timeSuffix: "183000" }
         
     ];
 
