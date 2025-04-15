@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { className: "swzy", startDate: "2025-04-30", numWeeks: 4, timeSuffix: "103000" },
         { className: "swub", startDate: "2025-04-30", numWeeks: 4, timeSuffix: "183000" },
         { className: "swub", startDate: "2025-04-29", numWeeks: 4, timeSuffix: "141500" },
-        { className: "s6cv", startDate: "2025-04-29", numWeeks: 4, timeSuffix: "141500" },
+        { className: "s6cv", startDate: "2025-04-29", numWeeks: 1, timeSuffix: "141500" },
         { className: "s6ug", startDate: "2025-04-29", numWeeks: 1, timeSuffix: "094500" }
         
     ];
